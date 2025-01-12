@@ -16,10 +16,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22.x'
+          node-version: "22.x"
 
       - name: Setup dependencies
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run: npm test /tests/url-checker.test.ts
