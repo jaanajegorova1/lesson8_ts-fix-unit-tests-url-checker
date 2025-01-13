@@ -1,4 +1,4 @@
-name: url-checker
+name: URL checker tests
 
 on:
   pull_request:
