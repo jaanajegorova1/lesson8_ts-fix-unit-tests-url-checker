@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "test:url": "npm jest ./tests/url-checker.test.ts",
+    "test:password": "npm jest ./tests/calculatePasswordStrength.test.ts",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
