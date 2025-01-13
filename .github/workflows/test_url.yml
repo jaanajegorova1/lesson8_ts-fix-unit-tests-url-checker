@@ -22,4 +22,4 @@ jobs:
         run: npm install
 
       - name: url-checker
-        run: npm tests /tests/url-checker.test.ts
+        run: npm test /tests/url-checker.test.ts
