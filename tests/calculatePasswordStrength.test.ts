@@ -10,16 +10,6 @@ describe("Calculate Password Strength tests", () => {
     expect(calculatePasswordStrength("3Eu8!yyU.3Eu")).toBe("Strong"); // password.length = 13
     expect(calculatePasswordStrength("3Eu8!yyU3Eu7muN")).toBe("Strong"); // password.length > 12 (15 symbols)
   });
-  // test("Check for empty password field", () => {
-  //   expect(calculatePasswordStrength("")).toBe("Very Weak"); // if (password.length === 0) => return "Very Weak" and message "The password field cannot be empty"
-  //   console.log("The password field cannot be empty");
-  // });
-  // test("Check password length, if it is less 8 symbols", () => {
-  //   expect(calculatePasswordStrength("iKYhgi9")).toBe("Very Weak"); // if (password.length < 8) => return "Very Weak" and message "The minimum password length is 8 symbols"
-  //   expect(calculatePasswordStrength("A")).toBe("Very Weak");
-  //   expect(calculatePasswordStrength("AyOk")).toBe("Very Weak");
-  //   console.log("The minimum password length is 8 symbols");
-  // });
   test("Check for digits", () => {
     expect(calculatePasswordStrength("123456789")).toBe("Very Weak");
   });
